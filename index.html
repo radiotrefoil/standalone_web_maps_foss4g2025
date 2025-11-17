@@ -32,6 +32,24 @@
       center: [175.0709, -36.7990], // Waiheke Island coordinates
       zoom: 12
     });
+    //Nav
+    map.addControl(new maplibregl.NavigationControl(), 'top-right');
+    // Add scale control
+    map.addControl(new maplibregl.ScaleControl({
+        maxWidth: 100,
+        unit: 'metric'
+    }), 'bottom-left');
+
+    // Swap between trail layers on hover
+    map.on('mouseenter', 'trail-line', function() {
+    map.setLayoutProperty('trail-line', 'visibility', 'none');
+    map.setLayoutProperty('te-ara-hura-hover', 'visibility', 'visible');
+    });
+
+    map.on('mouseleave', 'te-ara-hura-hover', function() {
+    map.setLayoutProperty('trail-line', 'visibility', 'visible');
+    map.setLayoutProperty('te-ara-hura-hover', 'visibility', 'none');
+    });
   </script>
 </body>
 </html>

@@ -46,7 +46,7 @@
           "hillshade-illumination-direction": 315,
           "hillshade-shadow-color": "hsla(0, 0%, 0%, 0.5)"
         }
-      },
+    },
     {
       "id": "landcover",
       "type": "fill",
@@ -1370,6 +1370,18 @@
         "line-width": 3,
         "line-dasharray": [2, 2]
       }
+    },
+    {
+        "id": "te-ara-hura-hover",
+        "layout": {"visibility":"none"},
+        "type": "line",
+        "source": "te-ara-hura",
+        "paint": {
+          "line-color": "#ff0000",
+          "line-width": 5,
+          "line-opacity": 0.7,
+          "line-dasharray": [2, 2]
+        }
     },
     {
       "id": "water_waterway_label",
