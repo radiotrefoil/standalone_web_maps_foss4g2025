@@ -11,7 +11,7 @@
       "type": "vector",
       "url": "pmtiles://sources/waiheke_island.pmtiles",
       "attribution": "© <a href=\"https://openstreetmap.org\" target=\"_blank\" rel=\"noopener noreferrer\">OpenStreetMap</a>"
-    }
+    },
     "terrain": {
       "type": "raster-dem",
       "url": "pmtiles://sources/waiheke_island_terrain.pmtiles",
